@@ -27,4 +27,14 @@ public class controller {
     public  String thank(){
         return "thank";
     }
+
+    @RequestMapping("/food")
+    public  String food(){
+        return "food";
+    }
+
+    @RequestMapping("/clothes")
+    public  String clothes(){
+        return "clothes";
+    }
 }

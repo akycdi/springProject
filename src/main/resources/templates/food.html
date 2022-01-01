@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="shortcut icon" type="image/x-icon" href="https://image.flaticon.com/icons/png/512/5003/5003330.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/food.css">
+  <title>Food</title>
+</head>
+<body>
+  <!-- multistep form -->
+<form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Details</li>
+    <li>Pick Up Location</li>
+    <li>Personal Details</li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">Enter the details</h2>
+    <h3 class="fs-subtitle"></h3>
+    <input type="text" name="email" placeholder="Name" />
+    <input type="text" name="pass" placeholder="Email" />
+    <input type="password" name="cpass" placeholder="Phone Number" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">ENTER ADDRESS FOR PICKUP</h2>
+    <h3 class="fs-subtitle"></h3>
+    <input type="textbox" name="twitter" placeholder="Address" />
+    <input type="text" name="facebook" placeholder="City/Village" />
+    <input type="text" name="gplus" placeholder="PinCode" />
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">DESCRIBE ABOUT FOOD</h2>
+    <h3 class="fs-subtitle">Food goes to need..!</h3>
+    <input type="text" name="fname" placeholder="Food Category" />
+    <input type="text" name="lname" placeholder="Quality Of Food" />
+    <input type="text" name="phone" placeholder="Quantity" />
+    <textarea name="address" placeholder="Describe About Package"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+  </fieldset>
+</form>
+<script src="./food.js"></script>
+</body>
+</html>
