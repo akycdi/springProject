@@ -38,17 +38,5 @@ public class AuthController {
 
         return "index";
     }
-    @RequestMapping("/log")
-    public String log(String aadhaar) {
-        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        HttpSession session=request.getSession();
-        long a = Integer.parseInt(aadhaar);
-        User c = (User)userRepository.findById(a).orElse(null);
-        session.setAttribute("citizen", c);
-        if(c==null)
-            return "login";
-
-        return "afterLogin";
-    }
 
 }
